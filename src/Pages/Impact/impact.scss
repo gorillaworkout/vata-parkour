@@ -1,0 +1,38 @@
+p{
+    margin:0px !important;
+}
+.container-card {
+    width:100vw;
+    height:100vh;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+
+    // background-color:red;
+    .container-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .card {
+            width:100px;
+            height:100px;
+            border-radius:10px;
+            border:1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+        }
+        .btn{
+            position: absolute;
+            width:10px;
+            transform: translate(185%, -0%);  
+            z-index:2;
+            border:none;
+        }
+    }
+
+}

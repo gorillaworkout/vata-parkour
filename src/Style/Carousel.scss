@@ -1,0 +1,19 @@
+.carousel-slider {
+    height:450px;
+    // margin-top:0px;
+    .slider-wrapper {
+        height:500px;
+        .slider {
+            .slide {
+                div{
+                    height:450px;
+                    border-radius:10px;
+                    img {
+                        border-radius:10px;
+                        height:100%;
+                    }
+                }
+            }
+        }
+    }
+}
