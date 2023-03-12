@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import "../Style/Header.scss";
-// const gorillaLogo = require('../Asset/newbggw.png')
 import logo from "../Asset/newbggw.png";
 import { AiOutlineInstagram,AiOutlineYoutube,AiOutlineWhatsApp } from "react-icons/ai";
 import { Fade } from "react-awesome-reveal";
-import { keyframes } from "@emotion/react";
 import {
   Dropdown,
   DropdownToggle,
