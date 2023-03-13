@@ -10,6 +10,7 @@ import {
   DropdownItem,
 } from "reactstrap";
 
+
 export default function Header() {
   const [menuActive, setMenuActive] = useState("");
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -54,7 +55,7 @@ export default function Header() {
                     <p>For all ability Levels and age ranges</p>
                   </div>
                   <div className="menu-option card-menu-3">
-                    <h4>Parkour Classes</h4>
+                    <h4>Military Training</h4>
                     <p>For all ability Levels and age ranges</p>
                   </div>
                 </div>
@@ -93,7 +94,7 @@ export default function Header() {
             </DropdownMenu>
           </Dropdown>
         </div>
-        <div className="input-card">
+        <div className="input-card" style={{display:'none'}}>
           <input type="text" className="input-search" placeholder="Search" />
         </div>
       </div>

@@ -9,7 +9,8 @@ import Parkour1 from "../../Asset/parkour/parkour1.jpg";
 import Accordion from "react-bootstrap/Accordion";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import {AiOutlineHome,AiOutlinePhone,AiOutlineMail} from 'react-icons/ai'
+import Footer from "../../Component/Footer";
+import {Link} from 'react-router-dom'
 export default function Home() {
   AOS.init();
 
@@ -27,7 +28,18 @@ export default function Home() {
             Parkour Tutorials, Demonstrations & Articles
           </h3>
           <div className="detail-class" data-aos="fade-up">
-            <div className="detail-card">
+            <Link  to={'/detail/tutorials'} className="detail-card">
+              <img src={Parkour1} alt="" />
+              <div className="detail-category">
+                <p>13 Categoriees</p>
+                <p>13 Categoriees</p>
+              </div>
+              <div  className="detail-title">
+                <p>All Tutorials</p>
+                <p>in-Depth video series on specific movement topics</p>
+              </div>
+            </Link>
+            <Link to={'/detail/demonstrations'} className="detail-card">
               <img src={Parkour1} alt="" />
               <div className="detail-category">
                 <p>13 Categoriees</p>
@@ -37,8 +49,8 @@ export default function Home() {
                 <p>All Tutorials</p>
                 <p>in-Depth video series on specific movement topics</p>
               </div>
-            </div>
-            <div className="detail-card">
+            </Link>
+            <Link to={'/detail/blog'} className="detail-card">
               <img src={Parkour1} alt="" />
               <div className="detail-category">
                 <p>13 Categoriees</p>
@@ -48,18 +60,7 @@ export default function Home() {
                 <p>All Tutorials</p>
                 <p>in-Depth video series on specific movement topics</p>
               </div>
-            </div>
-            <div className="detail-card">
-              <img src={Parkour1} alt="" />
-              <div className="detail-category">
-                <p>13 Categoriees</p>
-                <p>13 Categoriees</p>
-              </div>
-              <div className="detail-title">
-                <p>All Tutorials</p>
-                <p>in-Depth video series on specific movement topics</p>
-              </div>
-            </div>
+            </Link>
           </div>
           <div className="explore-card" data-aos="fade-up">
             <h1 data-aos="fade-up">Explore Series</h1>
@@ -222,39 +223,8 @@ export default function Home() {
               </Accordion.Item>
             </Accordion>
           </div>
-          <div className="card-footer" data-aos="fade-up">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.924819524854!2d106.75455441459874!3d-6.273616063159681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1326876a18d%3A0xb900f76c6e31673f!2sFITPARQ%20BINTARO!5e0!3m2!1sen!2sid!4v1677094910649!5m2!1sen!2sid" width="400" height="300"   loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-            <div className="footer-option">
-              <h3>Layanan</h3>
-              <p>Parkour</p>
-              <p>Parkour</p>
-              <p>Parkour</p>
-              <p>Parkour</p>
-            </div>
-            <div className="footer-option">
-              <h3>Lainnya</h3>
-              <p>Parkour</p>
-              <p>Parkour</p>
-              <p>Parkour</p>
-              <p>Parkour</p>
-            </div>
-            <div className="footer-option">
-              <h3>Kontak</h3>
-              <p>
-                <AiOutlineHome/> 
-                Jalan Bintaro Bintara 30 menit</p>
-              <p>
-                <AiOutlinePhone/>
-                087785192296</p>
-              <p>
-                <AiOutlineMail/>
-                vatavata@gmail.com</p>
-              
-            </div>
-          </div>
-          <div className="copy-right">
-            <p>Copyright 2023, Gorillaworkout</p>
-          </div>
+          <Footer/>
+         
         </div>
       </div>
     </>

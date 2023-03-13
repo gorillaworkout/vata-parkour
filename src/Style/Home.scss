@@ -3,7 +3,8 @@ p{
 }
 
 $orange:#f7941f;
-
+$gray:#fcfdfd;
+$dark-gray:#e7e5e4;
 .container-home {
   width:100%;
   height:100%;
@@ -34,7 +35,7 @@ $orange:#f7941f;
       align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
-      
+      text-decoration: none;
       .detail-card {
         width:320px;
         height:320px;
@@ -46,6 +47,7 @@ $orange:#f7941f;
         justify-content: center;
         background-color: #dbd9d8;
         transition:0.5s;
+        text-decoration: none;
         &:hover{
           width:330px;
           height:330px;
@@ -68,6 +70,7 @@ $orange:#f7941f;
           border-bottom:1px solid black;
           padding-left:10px;
           padding-right:10px;
+          text-decoration: none;
         }
         .detail-title {
           height:30%;
@@ -183,6 +186,72 @@ $orange:#f7941f;
       justify-content: center;
       align-items: center;
 
+    }
+    .card-title-detail {
+      width:100%;
+      height:400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      p:nth-child(1){
+        font-size:72px;
+        color:$orange;
+      }
+      p:nth-child(2){
+        font-size:40px;
+        color:black;
+      }
+      .card-option-menu {
+        width:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        .option-small-card {
+          min-width:150px;
+          height:50px;
+          border-radius:10px;
+          transition: 0.5s;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin:5px;
+          background-color: $dark-gray;
+          p{
+            font-size:12px;
+          }
+          &:hover{
+            background-color: $orange;
+            cursor: pointer;
+            p{
+              color:white;
+            }
+          }
+        }
+      }
+    }
+    .video-box {
+      width:100%;
+      height:100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      // justify-content: space-between;
+      .video-card-tutorial {
+        width:30%;
+        height:250px;
+        border-radius:10px;
+        
+        margin:10px;
+
+        // border:1px solid red;
+        .yt-lite {
+          height:100%;
+          border-radius:10px;
+        }
+      }
     }
   }
 }

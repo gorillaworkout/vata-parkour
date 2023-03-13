@@ -4,6 +4,7 @@ import Home from "./Pages/Home/Home.tsx";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Telkom from './Pages/telkom.jsx'
 import Tamtech from './Pages/tamtech.jsx'
+import Detail from './Pages/Detail/Detail.tsx'
 // import Login from './Pages/Login/Login'
 // import { GetAllProduct } from "./Redux/Actions/ProductActions";
 import { Routes, Route } from "react-router-dom";
@@ -25,6 +26,7 @@ function App() {
       <Route exact path="/impact" element={<Impact new_params={"testing"} />} />
       <Route exact path="/telkom" element={<Telkom new_params={"testing"} />} />
       <Route exact path="/tamtech" element={<Tamtech new_params={"testing"} />} />
+      <Route exact path="/detail/:status" element={<Detail new_params={"testing"} />} />
       {/* <Route exact path="/home" element={<Home new_params={"testing"} />} /> */}
     </Routes>
   );
